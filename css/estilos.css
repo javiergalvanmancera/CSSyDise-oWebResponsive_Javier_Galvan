@@ -1,0 +1,285 @@
+/* tipo de letra tomadode una fuente descargada*/
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src: url('../Fuentes/DancingScript-Regular.ttf');
+}
+
+#cont2{
+  width: 100%;
+  background-color: #d5c75f;
+  display: inline-block;
+  display: -ms-flex;
+  display: -webkit-flex;
+}
+
+/* medida para moviles */
+@media (max-width:420px) {
+  #cont2  {
+    display: inline-block;
+    max-width: 100%;
+     }
+
+header #titulo-1{
+   width: 100%;
+    white-space: pre-wrap;
+    text-align: center;
+       }
+ }
+/* medida para tabletas */
+@media screen and (min-width:420px) and (max-width:750px) {
+  #cont2  {
+    display: inline-block;
+    min-width: 10%;
+}
+}
+/* medida para grandes dispositivos */
+@media (min-width:760px) {
+  #cont2  {
+    min-width: 100%;
+}
+}
+
+@media  screen (max-width:480px) {
+#cont1  {
+display: inline-block;
+width: 100%;
+        }
+}
+
+body {
+width: 75%;
+background-color: black;
+display:block;margin:0 auto 0 auto;
+}
+
+header{
+    width: 100%;
+    background-color: #5b7989;
+    color: white;
+    border-radius: 10px;
+    font-family:'DancingScript-Regular';
+    animation: slidein 4s;
+    }
+
+
+#titulo-1{
+  width: 100%;
+  border:1px solid black;
+    white-space: pre-wrap;
+  font-size: 3em;
+  text-shadow: 2px 2px 2px #02010a;
+  display: block;
+  float: left;
+}
+#titulo-2{
+  width: 100%;
+  border:1px solid black;
+  font-size: 1em;
+  display: block;
+
+}
+
+#titulo{
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-shadow: 2px 2px 2px #02010a;
+    display: inline;
+    }
+
+#titulo-1,#titulo-2{
+  display: inline-block;
+}
+
+
+
+/* configuramos la animacion */
+    @-webkit-keyframes  slidein{
+      0%{
+        margin-top: 150%;
+      }
+      60%{
+        margin-top: -5%;
+      }
+      100%{
+        margin-top: 0%;
+      }
+    }
+
+
+/* Damos formato a los links del 2do contenedor */
+h3 a{
+font-family:'DancingScript-Regular';
+font-size: 1.5rem;
+display: flex;
+flex-direction: column;
+color: black;
+}
+
+/* h2,a{
+  display:inline;
+} */
+
+
+
+
+header h4{
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+/*los links*/
+header a{
+  color: white;
+  float: right;
+  text-align: right;
+
+/* los links dejan de tener el subrayado  */
+}
+a:hover{
+  text-decoration: none;
+}
+
+
+#cont1 {
+background-color: #82c3a6;
+padding: 10px;
+height: auto;
+}
+
+/* centrar la imagen principal */
+#cont1 img{
+  width: 70%;
+  height: auto;
+  border: 1px solid black;
+  display:block;margin:0 auto 0 auto;
+}
+
+
+/* trsnsformaciones de las 2 imagenes */
+  [src*='imagenizq.jpg']:hover{
+  transform: rotate(10deg);
+  text-shadow: 2px 2px 2px  #82c3a6;
+  border: 2px;
+  padding: 10px:
+}
+  [src*='imagender.jpg']:hover{
+  transform: translate(20px,-5px);
+  text-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+  box-shadow: 2px 2px 2px #75c3a6;
+}
+
+
+/* contenedor 2 */
+
+#cont2 > div{
+  width: 50%;
+  padding: 10px;
+}
+
+#cont2 img {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+#cont2 > div.first-child {
+  margin-right: 20px;
+}
+
+footer {
+  font-family: 'DancingScript-Regular';
+  color: black;
+  width: 100%;
+  border-radius: 5px;
+  background-color:#C6d5c5;
+  margin-bottom: 20px;
+
+}
+/* aplicamos pripiedad flex para el footer */
+#contf{
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* creamos los bloques del footer */
+.f1{
+  order: 1;
+  flex-grow: 3;
+  background-color:#C6d5c5;
+  width: 250px;
+
+}
+
+.f2{
+  order: 2;
+  flex-grow: 3;
+  background-color:#C6d5c5;
+  width: 250px;
+
+}
+.f3{
+  background-color:#C6d5c5;
+  order: 3;
+  flex-grow: 3;
+  width: 250px;
+
+}
+.f3 img{
+  width: 15px;
+  border-radius: 3px;
+}
+.f4{
+  order: 4;
+  background-color:#C6d5c5;
+  flex-grow: 3;
+  width: 250px;
+
+}
+
+
+
+/* Estructura de Retratos */
+#contr{
+background-color:#d5c75f;
+padding: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 98%;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* centrar la imagen principal */
+#contr img{
+  border: 1px solid black;
+
+}
+
+#ider1 img{
+margin-left: 2px;
+}
+#ider2 img{
+margin-left: 2px;
+}
+#ider3 img{
+margin-left: 2px;
+}
+#ider4 img{
+margin-left: 2px;
+}
+#ider5 img{
+margin-left: 2px;
+}
+#ider6 img{
+margin-left: 2px;
+}
