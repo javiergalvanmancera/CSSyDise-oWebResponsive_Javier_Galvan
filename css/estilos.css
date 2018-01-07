@@ -12,21 +12,63 @@
   display: -webkit-flex;
 }
 
+#contPaisaje{
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 
 /* medida para moviles */
-@media (max-width:420px) {
+@media (max-width:900px) {
   #cont2   {
     display: inline-block;
     max-width: 100%;
      }
-     #ider4  {
-       display: inline-block;
-       max-width: 100%;
+     #ider1 {
+       display: inline;
+       max-width: 95%;
+
+     }
+        #ider2 {
+         display: inline;
+          max-width: 95%;
         }
-        #contr1 > div {
-          display: inline-block;
-          max-width: 100%;
-           }
+        #ider3 {
+         display: inline;
+          max-width: 95%;
+        }
+        #ider4 {
+         display: inline;
+          max-width: 95%;
+        }
+        #ider5 {
+         display: inline;
+          max-width: 95%;
+        }
+        #ider6 {
+         display: inline;
+          max-width: 95%;
+        }
+
+        #contPaisaje > div{
+        margin: 0 auto;
+        display: inline-block;
+        padding: 15px;
+        max-width: 100%;
+        text-align: center;
+        }
+  #contr img{
+  align-content: center;
+  max-width: 95%;
+}
+#contr1 img{
+align-content: center;
+max-width: 95%;
+}
 
 header #titulo-1{
    width: 100%;
@@ -34,18 +76,30 @@ header #titulo-1{
     text-align: center;
        }
  }
+
 /* medida para tabletas */
-@media screen and (min-width:420px) and (max-width:750px) {
+@media screen and (min-width:900px) and (max-width:1400px) {
   #cont2  {
     display: inline-block;
     min-width: 100%;
 }
+/*
+#contPaisaje > div{
+display: inline-block;
+padding: 15px;
+  max-width: 100%;
+   } */
+
+
+
+
 }
 /* medida para grandes dispositivos */
-@media (min-width:760px) {
+@media (min-width:900px) {
   #cont2  {
     min-width: 100%;
 }
+
 }
 
 @media  screen (max-width:480px) {
@@ -194,7 +248,6 @@ height: auto;
     border: 1px solid black;
     width: 100%;
     height: auto;
-    border: 1px solid black;
 }
 #cont2 > div.first-child {
   margin-right: 20px;
@@ -269,13 +322,6 @@ margin-right: auto;
 } */
 
 
-#contr{
-  width: 100%;
-  background-color: #d5c75f;
-  display: inline-block;
-  display: -ms-flex;
-  display: -webkit-flex;
-}
 
 #contr1{
   width: 100%;
@@ -283,63 +329,75 @@ margin-right: auto;
   display: inline-block;
   display: -ms-flex;
   display: -webkit-flex;
+  margin-top: 0;
 }
+
+
+/* Posicionamiento de las 6imagenes */
 
 #contr > div{
   width:33%;
   padding: 10px;
 }
-#contr1 > div{
-  width:33%;
-  padding: 10px;
-}
-#contr img {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-}
 
-#contr1 img {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
+#contr{
+  width: 100%;
+  background-color: #d5c75f;
+  display: inline-block;
+  display: -ms-flex;
+  display: -webkit-flex;
+  padding: 15px;
+  margin-bottom: 0px;
 }
 
 #contr > div.first-child {
   margin-right: 20px;
 }
 
+#contr img {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+#contr1 > div{
+  width:33%;
+  padding: 10px;
+}
+
+
+#contr1
+ {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+
+
 #contr1 > div.first-child {
   margin-right: 20px;
 }
 
 
-
-
-
-
-
-
-/* centrar la imagen principal */
-#contr img{
-  border: 1px solid black;
-
-}
-
 #ider1 img{
-margin-left: 2px;
+margin: 2px;
 }
 #ider2 img{
+  margin-left: 0px;
 }
 #ider3 img{
-margin-left: 2px;
+margin-left: 0px;
 }
 #ider4 img{
-margin-left: 2px;
+margin-left: 0px;
 }
 #ider5 img{
-margin-left: 2px;
+margin-left: 0px;
 }
 #ider6 img{
-margin-left: 2px;
+margin-left: 0px;
 }
