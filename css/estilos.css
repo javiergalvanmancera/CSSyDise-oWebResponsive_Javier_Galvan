@@ -19,9 +19,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: #d5c75f;
 }
-
-
+/* ________________________________________________ */
+/* Aplicamos los @media query */
 /* medida para moviles */
 @media (max-width:900px) {
   #cont2   {
@@ -31,84 +32,88 @@
      #ider1 {
        display: inline;
        max-width: 95%;
-
      }
-        #ider2 {
-         display: inline;
-          max-width: 95%;
-        }
-        #ider3 {
-         display: inline;
-          max-width: 95%;
-        }
-        #ider4 {
-         display: inline;
-          max-width: 95%;
-        }
-        #ider5 {
-         display: inline;
-          max-width: 95%;
-        }
-        #ider6 {
+      #ider2 {
+       display: inline;
+       max-width: 95%;
+      }
+      #ider3 {
+       display: inline;
+       max-width: 95%;
+      }
+      #ider4 {
+       display: inline;
+        max-width: 95%;
+      }
+      #ider5 {
+       display: inline;
+        max-width: 95%;
+      }
+      #ider6 {
          display: inline;
           max-width: 95%;
         }
 
-        #contPaisaje > div{
-        margin: 0 auto;
-        display: inline-block;
-        padding: 15px;
-        max-width: 100%;
-        text-align: center;
+      #contPaisaje > div{
+          margin: 0 auto;
+          display: inline-block;
+          padding: 15px;
+          max-width: 100%;
+          text-align: center;
         }
-  #contr img{
-  align-content: center;
-  max-width: 95%;
-}
-#contr1 img{
-align-content: center;
-max-width: 95%;
-}
-
-header #titulo-1{
-   width: 100%;
-    /* white-space: pre-wrap; */
-    text-align: center;
+      #contr img{
+        align-content: center;
+        max-width: 95%;
        }
- }
+      #contr1 img{
+        align-content: center;
+        max-width: 95%;
+      }
+      .titulo-1{
+height: auto;
+      }
+
+      header h1{
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        line-height: 1px;
+        display: inline;
+      }
+
+      header .titulo-2{
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+         /* line-height: 10px; */
+        display: inline-block;
+        margin: 0 auto;
+       }
+       footer contf > div{
+         display: inline;
+       }
+
+
+ } /*termina el media query moviles*/
 
 /* medida para tabletas */
-@media screen and (min-width:900px) and (max-width:1400px) {
-  #cont2  {
-    display: inline-block;
-    min-width: 100%;
-}
-/*
-#contPaisaje > div{
-display: inline-block;
-padding: 15px;
-  max-width: 100%;
-   } */
-
-
-
+@media screen and (min-width:900px) and (max-width:1700px) {
 
 }
+
 /* medida para grandes dispositivos */
-@media (min-width:900px) {
-  #cont2  {
-    min-width: 100%;
-}
+@media (min-width:910px) {
+
 
 }
 
-@media  screen (max-width:480px) {
+/* @media  screen (max-width:480px) {
 #cont1  {
 display: inline-block;
 width: 100%;
         }
-}
-
+} */
+/* ________________________________________________ */
 body {
 width: 75%;
 background-color: black;
@@ -117,47 +122,49 @@ display:block;margin:0 auto 0 auto;
 
 header{
     width: 100%;
+    height: 10%;
+    overflow: hidden;
     background-color: #5b7989;
-    color: white;
+    margin-bottom: 0px;
     border-radius: 10px;
     font-family:'DancingScript-Regular';
     animation: slidein 4s;
     }
-
-
-#titulo-1{
-  width: 100%;
-  border:1px solid black;
-    white-space: pre-wrap;
-  font-size: 3em;
-  text-shadow: 2px 2px 2px #02010a;
-  display: block;
-  float: left;
-}
-#titulo-2{
-  width: 100%;
-  border:1px solid black;
-  font-size: 1em;
-  display: block;
-
-}
-
-#titulo{
-    width: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-shadow: 2px 2px 2px #02010a;
-    display: inline;
+    .titulo{
+      width: 100%;
+      height: 200px;
     }
 
-#titulo-1,#titulo-2{
-  display: inline-block;
+.titulo h1{
+    max-width: 1000px;
+    line-height: 150px;
+    margin: auto;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px #02010a;
+    }
+
+header h1{
+      color: white;
+      font-size:40px;
+    	line-height:150px;
+    	float:left;
+    }
+header .titulo-2{
+  float: right;
+  line-height: 150px;
+  align-items: center;
 }
 
+header .titulo-2 a{
+  color: white;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 1.5em;
+}
 
+a:hover{
+  text-decoration: none;
+}
 
 /* configuramos la animacion */
     @-webkit-keyframes  slidein{
@@ -172,7 +179,6 @@ header{
       }
     }
 
-
 /* Damos formato a los links del 2do contenedor */
 h3 a{
 font-family:'DancingScript-Regular';
@@ -182,30 +188,13 @@ flex-direction: column;
 color: black;
 }
 
-/* h2,a{
-  display:inline;
-} */
-
-
-
-
 header h4{
   padding-right: 40px;
   padding-bottom: 20px;
 }
 
-/*los links*/
-header a{
-  color: white;
-  float: right;
-  text-align: right;
-
-/* los links dejan de tener el subrayado  */
-}
-a:hover{
-  text-decoration: none;
-}
-
+/* ________________________________________________ */
+/* configuramos contenedor 1 del index*/
 
 #cont1 {
 background-color: #82c3a6;
@@ -221,8 +210,24 @@ height: auto;
   display:block;margin:0 auto 0 auto;
 }
 
+/* configuramos contenedor 2 del index*/
 
-/* trsnsformaciones de las 2 imagenes */
+#cont2 > div{
+  width: 50%;
+  padding: 10px;
+}
+
+#cont2 img {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+#cont2 > div.first-child {
+  margin-right: 20px;
+}
+
+/* trasnsformaciones de las 2 imagenes */
   [src*='imagenizq.jpg']:hover{
   transform: rotate(10deg);
   text-shadow: 2px 2px 2px  #82c3a6;
@@ -236,23 +241,8 @@ height: auto;
   box-shadow: 2px 2px 2px #75c3a6;
 }
 
-
-/* contenedor 2 */
-
-#cont2 > div{
-  width: 50%;
-  padding: 10px;
-}
-
-#cont2 img {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-}
-#cont2 > div.first-child {
-  margin-right: 20px;
-}
-
+/* __________________________________________________ */
+/* configuracion del footer y sus bloques */
 footer {
   font-family: 'DancingScript-Regular';
   color: black;
@@ -260,9 +250,9 @@ footer {
   border-radius: 5px;
   background-color:#C6d5c5;
   margin-bottom: 20px;
-
 }
-/* aplicamos pripiedad flex para el footer */
+
+/* aplicamos prioiedad flex para el footer */
 #contf{
   width: 100%;
   display: -webkit-flex;
@@ -278,7 +268,6 @@ footer {
   flex-grow: 3;
   background-color:#C6d5c5;
   width: 250px;
-
 }
 
 .f2{
@@ -286,68 +275,46 @@ footer {
   flex-grow: 3;
   background-color:#C6d5c5;
   width: 250px;
-
 }
+
 .f3{
   background-color:#C6d5c5;
   order: 3;
   flex-grow: 3;
   width: 250px;
-
 }
+
 .f3 img{
   width: 15px;
   border-radius: 3px;
 }
+
 .f4{
   order: 4;
   background-color:#C6d5c5;
   flex-grow: 3;
   width: 250px;
-
 }
 
 
 
 /* Estructura de Paisajes y Retratos */
-/* .contr{
-background-color:#d5c75f;
-padding: 10px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-width: 98%;
-margin-left: auto;
-margin-right: auto;
-} */
-
-
-
-#contr1{
-  width: 100%;
-  background-color: #d5c75f;
-  display: inline-block;
-  display: -ms-flex;
-  display: -webkit-flex;
-  margin-top: 0;
-}
-
-
 /* Posicionamiento de las 6imagenes */
+/* medidas para los contenedores a 3 columnas 1er. sub-contenedor */
 
-#contr > div{
-  width:33%;
-  padding: 10px;
-}
 
 #contr{
   width: 100%;
-  background-color: #d5c75f;
   display: inline-block;
   display: -ms-flex;
   display: -webkit-flex;
   padding: 15px;
-  margin-bottom: 0px;
+  margin: 0px;
+}
+
+#contr > div{
+  width:33%;
+  padding: 10px;
 }
 
 #contr > div.first-child {
@@ -355,49 +322,53 @@ margin-right: auto;
 }
 
 #contr img {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
 }
 
-
-
+/* medidas para los contenedores a 3 columnas 2do. sub-contenedor */
+#contr1{
+  width: 100%;
+  display: inline-block;
+  display: -ms-flex;
+  display: -webkit-flex;
+  padding: 15px;
+  margin: 0px;
+}
 
 #contr1 > div{
   width:33%;
   padding: 10px;
 }
 
-
-#contr1
- {
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-}
-
-
-
 #contr1 > div.first-child {
   margin-right: 20px;
 }
 
+#contr1 img {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+}
+/* _______________________________________________________________ */
+
 
 #ider1 img{
-margin: 2px;
+width: 90%;
 }
 #ider2 img{
-  margin-left: 0px;
+width: 90%;
 }
 #ider3 img{
-margin-left: 0px;
+width: 90%;
 }
 #ider4 img{
-margin-left: 0px;
+width: 90%;
 }
 #ider5 img{
-margin-left: 0px;
+width: 90%;
 }
 #ider6 img{
-margin-left: 0px;
+width: 90%;
 }
